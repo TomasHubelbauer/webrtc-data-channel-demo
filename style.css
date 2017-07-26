@@ -1,0 +1,3 @@
+ul { list-style-type: none; width: 50%; }
+li.them { background: azure; text-align: right; }
+li.me { font-weight: bold; }

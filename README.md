@@ -1,5 +1,5 @@
 # WebRTC Data Channels Example
-A simple example of WebRTC Data Channels. Uses [postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) as a substitute for a real signalling channel.
+A simple example of WebRTC Data Channels. Uses [`postMessage()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) as a substitute for a real signalling channel.
 
 I've made this because I was frustrated with the lack of good WebRTC data channel examples and tutorials online. Either they went out of date really quickly or they were written in an order that made it confusing and hard to follow for me when thinking about the actual order of events happening during the connection establishment process.
 

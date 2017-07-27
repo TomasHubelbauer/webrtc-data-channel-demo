@@ -125,7 +125,7 @@ function initializeAndSendAnswer(offer) {
 		document.getElementById('messageLogUl').appendChild(li);
 	};
 
-	dataChannel.onopen = event => console.log('[offerer] onopen');
+	dataChannel.onopen = event => console.log('[answerer] onopen');
 
 	peerConnection.setRemoteDescription(offer)
 		.then(() => {

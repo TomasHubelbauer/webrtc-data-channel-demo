@@ -70,6 +70,21 @@ function initializeAndSendAnswer(offer) {
 		// This instance must be used with `send`! `dataChannel` cannot be used for `send`!
 		dataChannel2 = event.channel;
 		//dataChannel2.send('hello from answerer');
+
+		dataChannel2.onbufferedamountlow = event => console.log('[offerer] onbufferedamountlow', event);
+
+		dataChannel2.onclose = event => console.log('[offerer] onclose', event);
+
+		dataChannel2.onerror = event => console.log('[offerer] onerror', event);
+
+		dataChannel2.onmessage = event => {
+			const li = document.createElement('li');
+			li.className = 'them';
+			li.textContent = event.data;
+			document.getElementById('messageLogUl').appendChild(li);
+		};
+
+		dataChannel2.onopen = event => console.log('[offerer] onopen');
 	};
 
 	peerConnection.onicecandidate = event => {
@@ -109,23 +124,6 @@ function initializeAndSendAnswer(offer) {
 	};
 
 	peerConnection.ontrack = event => console.log('[answerer] ontrack', event);
-
-	const dataChannel = peerConnection.createDataChannel('test');
-
-	dataChannel.onbufferedamountlow = event => console.log('[answerer] onbufferedamountlow', event);
-
-	dataChannel.onclose = event => console.log('[answerer] onclose', event);
-
-	dataChannel.onerror = event => console.log('[answerer] onerror', event);
-
-	dataChannel.onmessage = event => {
-		const li = document.createElement('li');
-		li.className = 'them';
-		li.textContent = event.data;
-		document.getElementById('messageLogUl').appendChild(li);
-	};
-
-	dataChannel.onopen = event => console.log('[answerer] onopen');
 
 	peerConnection.setRemoteDescription(offer)
 		.then(() => {

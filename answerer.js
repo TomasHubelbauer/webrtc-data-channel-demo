@@ -84,7 +84,7 @@ function initializeAndSendAnswer(offer) {
 			document.getElementById('messageLogUl').appendChild(li);
 		};
 
-		dataChannel2.onopen = event => console.log('[offerer] onopen');
+		dataChannel2.onopen = event => console.log('[answerer] onopen');
 	};
 
 	peerConnection.onicecandidate = event => {

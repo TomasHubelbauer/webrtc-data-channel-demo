@@ -68,12 +68,7 @@ function initializeAndSendOffer() {
 
 	peerConnection.onconnectionstatechange = event => console.log('[offerer] onconnectionstatechange', event);
 
-	peerConnection.ondatachannel = event => {
-		console.log('[offerer] ondatachannel');
-		// This instance must be used with `send`! `dataChannel` cannot be used for `send`!
-		//dataChannel2 = event.channel;
-		//dataChannel2.send('hello from offerer');
-	};
+	peerConnection.ondatachannel = event => console.log('[offerer] ondatachannel');
 
 	peerConnection.onicecandidate = event => {
 		//console.groupCollapsed('[offerer] onicecandidate');

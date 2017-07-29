@@ -18,3 +18,8 @@ Please review the code-base and do not hesitate to open an issue or a PR with qu
 One example of a good contribution would be splitting the repo into two directories - one with explicit offerer-answerer roles and one with a single *peer* role where the peer is able to both initiate and accept a connection.
 
 I will work on that when time allows.
+
+[I have asked for a code review of this example on Stack Exchange Code Review](https://codereview.stackexchange.com/q/171282/87918)
+
+TODO:
+- [ ] Update the Code Review question snippets to the async/await syntax

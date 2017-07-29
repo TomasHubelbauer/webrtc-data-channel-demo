@@ -1,3 +1,6 @@
+let peerConnection;
+let dataChannel;
+
 window.addEventListener('load', event => {
 	//console.log('[offerer] loaded');
 	sendMessageToIndex({ type: 'offerer-hello' });
@@ -12,7 +15,7 @@ window.addEventListener('load', event => {
 			li.textContent = message;
 			document.getElementById('messageLogUl').appendChild(li);
 
-			dataChannel2.send(message);
+			dataChannel.send(message);
 		}
 	});
 });
@@ -28,30 +31,26 @@ function sendMessageToIndex(data) {
 	//console.groupEnd();
 }
 
-let peerConnection;
-let dataChannel2;
-
-function receiveMessage(data) {
+async function receiveMessage(data) {
 	switch (event.data.type) {
 		case 'index-hello': {
 			//console.log('[offerer] index says hello');
-			peerConnection = initializeAndSendOffer();
+			await initializeAndSendOffer();
+			console.log('[offerer] initialized peer connection');
 			break;
 		}
 
 		case 'answerer-answer': {
 			console.log('[offerer] received answerer answer');
-			peerConnection.setRemoteDescription(event.data.answer)
-				.then(() => console.log('[offerer] set answerer description'))
-				.catch(console.error);
+			await peerConnection.setRemoteDescription(event.data.answer)
+			console.log('[offerer] set answerer description');
 			break;
 		}
 
 		case 'answerer-candidate': {
 			console.log('[offerer] received answerer candidate');
-			peerConnection.addIceCandidate(event.data.candidate)
-				.then(() => console.log('[offerer] added answerer ice candidate'))
-				.catch(console.error);
+			await peerConnection.addIceCandidate(event.data.candidate)
+			console.log('[offerer] added answerer ice candidate');
 			break;
 		}
 
@@ -61,8 +60,8 @@ function receiveMessage(data) {
 	}
 }
 
-function initializeAndSendOffer() {
-	const peerConnection = new RTCPeerConnection({ iceServers: [ { urls: [ 'stun:stun.l.google.com:19302' ] } ] });
+async function initializeAndSendOffer() {
+	peerConnection = new RTCPeerConnection({ iceServers: [ { urls: [ 'stun:stun.l.google.com:19302' ] } ] });
 
 	peerConnection.onaddstream = event => console.log('[offerer] onaddstream', event);
 
@@ -108,7 +107,7 @@ function initializeAndSendOffer() {
 
 	peerConnection.ontrack = event => console.log('[offerer] ontrack', event);
 
-	const dataChannel = peerConnection.createDataChannel('test');
+	dataChannel = peerConnection.createDataChannel('test');
 
 	dataChannel.onbufferedamountlow = event => console.log('[offerer] onbufferedamountlow', event);
 
@@ -125,17 +124,11 @@ function initializeAndSendOffer() {
 
 	dataChannel.onopen = event => console.log('[offerer] onopen');
 
-	dataChannel2 = dataChannel;
-
-	peerConnection.createOffer()
-		.then(offer => {
-			peerConnection.setLocalDescription(offer);
-			sendMessageToIndex({ type: 'offerer-offer', offer: { type: offer.type, sdp: offer.sdp } });
-		})
-		.catch(console.error);
+	const offer = await peerConnection.createOffer();
+	await peerConnection.setLocalDescription(offer);
+	sendMessageToIndex({ type: 'offerer-offer', offer: { type: offer.type, sdp: offer.sdp } });
 	
 	document.getElementById('iceConnectionStateSpan').textContent = peerConnection.iceConnectionState;
 	document.getElementById('iceGatheringStateSpan').textContent = peerConnection.iceGatheringState;
 	document.getElementById('signalingStateSpan').textContent = peerConnection.signalingState;
-	return peerConnection;
 }

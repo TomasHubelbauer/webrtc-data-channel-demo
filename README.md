@@ -20,6 +20,3 @@ One example of a good contribution would be splitting the repo into two director
 I will work on that when time allows.
 
 [I have asked for a code review of this example on Stack Exchange Code Review](https://codereview.stackexchange.com/q/171282/87918)
-
-TODO:
-- [ ] Update the Code Review question snippets to the async/await syntax

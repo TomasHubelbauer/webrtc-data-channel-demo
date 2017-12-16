@@ -9,7 +9,9 @@ The code should be self-explanatory when following MDN on the side. There is onl
 
 ## Offerer-answerer mode
 
-`open offerer-answerer/index.html`
+Unix: `open offerer-answerer/index.html`
+
+Windows: `start offerer-answerer/index.html`
 
 In this demo, there are two separate files for offerer and answerer so that who does what when establishing a connection is clearly separated.
 
@@ -46,7 +48,9 @@ answerer.js:83 [answerer] onopen
 
 ## Peer mode
 
-`open peer/index.html`
+Unix: `open peer/index.html`
+
+Windows: `start peer/index.html`
 
 In this demo, each peer is capable of being either and offerer or an answerer. The flows for both are intertwined. Less clear but more real-life.
 

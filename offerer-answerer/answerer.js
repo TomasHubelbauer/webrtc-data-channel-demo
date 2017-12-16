@@ -66,7 +66,6 @@ async function initializeAndSendAnswer(offer) {
 	peerConnection.ondatachannel = event => {
 		console.log('[answerer] ondatachannel');
 		dataChannel = event.channel;
-		//dataChannel.send('hello from answerer');
 
 		dataChannel.onbufferedamountlow = event => console.log('[offerer] onbufferedamountlow', event);
 

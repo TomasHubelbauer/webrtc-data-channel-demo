@@ -4,7 +4,7 @@ window.addEventListener('load', event => {
 	sendMessageToAnswerer({ type: 'index-hello' });
 });
 
-window.addEventListener('message', function (event) {
+window.addEventListener('message', event => {
 	receiveMessage(event.data);
 });
 

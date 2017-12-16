@@ -63,8 +63,6 @@ async function receiveMessage(data) {
 async function initializeAndSendOffer() {
 	peerConnection = new RTCPeerConnection({ iceServers: [ { urls: [ 'stun:stun.l.google.com:19302' ] } ] });
 
-	peerConnection.onaddstream = event => console.log('[offerer] onaddstream', event);
-
 	peerConnection.onconnectionstatechange = event => console.log('[offerer] onconnectionstatechange', event);
 
 	peerConnection.ondatachannel = event => console.log('[offerer] ondatachannel');

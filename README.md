@@ -7,8 +7,6 @@ I've made this because I was frustrated with the lack of good WebRTC data channe
 
 The code should be self-explanatory when following MDN on the side. There is only one gotcha and it is documented/commented. Following the Console messages in Developer Tools should make it clear what happens and when.
 
-This example is written using latest JavaScript features available in Chrome 63. It does not use anything else and runs off the `file` protocol.
-
 ## Offerer-answerer mode
 
 `open offerer-answerer/index.html`
@@ -24,6 +22,15 @@ In this demo, there are two separate files for offerer and answerer so that who 
 In this demo, each peer is capable of being either and offerer or an answerer. The flows for both are intertwined. Less clear but more real-life.
 
 ![A screenshot of Google Chrome running the example](peer/screenshot.png)
+
+## Support
+
+This example is written using latest JavaScript features available in:
+
+- Chrome 63+
+- Firefox 58+
+
+It does not use anything else and runs off the `file` protocol.
 
 ## Contributing
 

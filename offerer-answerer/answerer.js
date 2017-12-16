@@ -32,7 +32,7 @@ function sendMessageToIndex(data) {
 }
 
 async function receiveMessage(data) {
-	switch (event.data.type) {
+	switch (data.type) {
 		case 'index-hello': {
 			//console.log('[answerer] index says hello');
 			break;
@@ -40,20 +40,20 @@ async function receiveMessage(data) {
 
 		case 'offerer-offer': {
 			console.log('[answerer] received offerer offer');
-			await initializeAndSendAnswer(event.data.offer);
+			await initializeAndSendAnswer(data.offer);
 			console.log('[answerer] initialized peer connection');
 			break;
 		}
 
 		case 'offerer-candidate': {
 			console.log('[answerer] received offerer candidate');
-			await peerConnection.addIceCandidate(event.data.candidate)
+			await peerConnection.addIceCandidate(data.candidate)
 			console.log('[answerer] added offerer ice candidate');
 			break;
 		}
 
 		default: {
-			console.error('[answerer] unprocessable message type', event.data.type, event.data);
+			console.error('[answerer] unprocessable message type', data.type, data);
 		}
 	}
 }

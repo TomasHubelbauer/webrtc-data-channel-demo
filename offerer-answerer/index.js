@@ -4,12 +4,12 @@ window.addEventListener('load', event => {
 	sendMessageToAnswerer({ type: 'index-hello' });
 });
 
-window.addEventListener('message', event => {
+window.addEventListener('message', function (event) {
 	receiveMessage(event.data);
 });
 
 function receiveMessage(data) {
-	switch (event.data.type) {
+	switch (data.type) {
 		case 'offerer-hello': {
 			//console.log('[index] offerer says hello');
 			break;
@@ -21,24 +21,24 @@ function receiveMessage(data) {
 
 		case 'offerer-offer':
 		case 'offerer-candidate': {
-			//console.groupCollapsed('[index] marshalling between offerer and answerer:', event.data.type);
-			//console.log(event.data);
+			//console.groupCollapsed('[index] marshalling between offerer and answerer:', data.type);
+			//console.log(data);
 			//console.groupEnd();
-			sendMessageToAnswerer(event.data);
+			sendMessageToAnswerer(data);
 			break;
 		}
 
 		case 'answerer-answer':
 		case 'answerer-candidate': {
-			//console.groupCollapsed('[index] marshalling between answerer and offerer:', event.data.type);
-			//console.log(event.data);
+			//console.groupCollapsed('[index] marshalling between answerer and offerer:', data.type);
+			//console.log(data);
 			//console.groupEnd();
-			sendMessageToOfferer(event.data);
+			sendMessageToOfferer(data);
 			break;
 		}
 
 		default: {
-			console.error('[index] unprocessable message type', event.data.type, event.data);
+			console.error('[index] unprocessable message type', data.type, data);
 		}
 	}
 }

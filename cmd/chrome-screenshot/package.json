@@ -1,0 +1,9 @@
+{
+  "name": "chrome-screenshot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^0.13.0"
+  }
+}

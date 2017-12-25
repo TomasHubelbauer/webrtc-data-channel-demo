@@ -124,6 +124,10 @@ This example is written using latest JavaScript features available in:
 
 It does not use anything else and runs off the `file` protocol.
 
+## Scripts
+
+- `cmd/chrome-screenshot/index.js` Chrome screenshot capturer
+
 ## Exploring
 
 See [doc/notes.md](doc/notes.md).

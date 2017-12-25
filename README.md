@@ -124,12 +124,14 @@ This example is written using latest JavaScript features available in:
 
 It does not use anything else and runs off the `file` protocol.
 
+## Exploring
+
+See [doc/notes.md](doc/notes.md).
+
 ## Contributing
 
 Please review the code-base and do not hesitate to open an issue or a PR with questions or proposed changes. PRs in the spirit of this excercise will be merged, PRs adding fluff that has no direct impact on understanding the data channels flow (like adding alternative signalling channel mechanism which work the same way the current one does, adding bundlers etc.) will be respectfully declined.
 
 Suggested contributions:
 
-- Script for generating screenshots automatically using headless Chrome and/or Firefox
-- Keying peer connection and data channel by peer in the peer demo to make it possible to have a group conversation or multiple conversations at one time
-- Extension of the example to cover media session establishment on top of the data one
+See [doc/tasks.md](doc/tasks.md).

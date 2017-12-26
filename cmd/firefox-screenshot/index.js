@@ -14,5 +14,6 @@ const directoryPath = path.join(__dirname, `../../src/${demo}`);
 driver.get('file://' + path.join(directoryPath, 'index.html'));
 
 // TODO: Finalize the implementation.
+// https://developer.mozilla.org/en-US/Firefox/Headless_mode
 
 driver.quit();

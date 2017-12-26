@@ -25,7 +25,7 @@ In this demo, there are two separate files for offerer and answerer so that who 
 - Windows: `start peer/index.html`
 - Test: `./cmd/chrome-screenshot/cmd.sh peer`
 
-In this demo, each peer is capable of being either and offerer or an answerer. The flows for both are intertwined. Less clear but more real-life.
+In this demo, each peer is capable of being either an offerer or an answerer. The flows for both are intertwined. Less clear but more real-life.
 
 ![A screenshot of Google Chrome running the example](src/peer/screenshot.png)
 

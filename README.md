@@ -11,25 +11,27 @@ The code should be self-explanatory when following MDN on the side. There is onl
 
 - Unix: `open offerer-answerer/index.html`
 - Windows: `start offerer-answerer/index.html`
-- Test: `./cmd/chrome-screenshot/cmd.sh offerer-answerer`
+- Chrome Test: `./cmd/chrome-screenshot/cmd.sh offerer-answerer`
+- Firefox Test: `./cmd/firefox-screenshot/cmd.sh offerer-answerer`
 
 In this demo, there are two separate files for offerer and answerer so that who does what when establishing a connection is clearly separated.
 
-![A screenshot of Google Chrome running the example](src/offerer-answerer/screenshot.png)
+![Google Chrome screenshot of this demo](src/offerer-answerer/screenshot.png)
 
-[Console output from this demo](/src/offerer-answerer/console.log)
+[Google Chrome Console output from this demo](/src/offerer-answerer/console.log)
 
 ## Peer mode
 
 - Unix: `open peer/index.html`
 - Windows: `start peer/index.html`
-- Test: `./cmd/chrome-screenshot/cmd.sh peer`
+- Chrome Test: `./cmd/chrome-screenshot/cmd.sh peer`
+- Firefox Test: `./cmd/firefox-screenshot/cmd.sh peer`
 
 In this demo, each peer is capable of being either an offerer or an answerer. The flows for both are intertwined. Less clear but more real-life.
 
-![A screenshot of Google Chrome running the example](src/peer/screenshot.png)
+![Google Chrome screenshot of this demo](src/peer/screenshot.png)
 
-[Console output from this demo](/src/peer/console.log)
+[Google Chrome Console output from this demo](/src/peer/console.log)
 
 ## Support
 
@@ -47,9 +49,10 @@ Chrome screenshot capture:
 - `./cmd/chrome-screenshot/cmd.sh peer`
 - `./cmd/chrome-screenshot/cmd.sh offerer-answerer`
 
-Firefox screenshot capture:
+Firefox screenshot capture (in development):
 
-- [ ] Implement (see [doc/tasks.md](doc/tasks.md))
+- `./cmd/firefox-screenshot/cmd.sh peer`
+- `./cmd/firefox-screenshot/cmd.sh offerer-answerer`
 
 ## Exploring
 

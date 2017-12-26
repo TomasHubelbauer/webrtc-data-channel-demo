@@ -1,0 +1,56 @@
+[peer A1] index provides new peers
+[peer A2] index provides new peers
+[peer B1] index provides new peers
+[peer B2] index provides new peers
+[peer A1] initialized peer connection
+[peer A1] onsignalingstatechange have-local-offer
+[peer A1] onicegatheringstatechange gathering
+[peer B2] received peer offer from A1
+[peer B2] received ice candidate from A1
+[peer B2] set offerer description
+[peer B2] added peer ice candidate from A1
+[peer B2] onsignalingstatechange have-remote-offer
+[peer B2] onsignalingstatechange stable
+[peer B2] oniceconnectionstatechange checking
+[peer B2] initialized peer connection
+[peer B2] onicegatheringstatechange gathering
+[peer A1] received peer answer from B2
+[peer A1] received ice candidate from B2
+[peer B2] onicegatheringstatechange complete
+[peer A1] set peer description
+[peer A1] added peer ice candidate from B2
+[peer A1] onsignalingstatechange stable
+[peer A1] oniceconnectionstatechange checking
+[peer A1] onicegatheringstatechange complete
+[peer A1] oniceconnectionstatechange connected
+[peer A1] oniceconnectionstatechange completed
+[peer A1] onopen
+[peer B2] oniceconnectionstatechange connected
+[peer B2] ondatachannel
+[peer B2] onopen
+[peer B1] onsignalingstatechange have-local-offer
+[peer B1] initialized peer connection
+[peer B1] onicegatheringstatechange gathering
+[peer A2] received peer offer from B1
+[peer A2] received ice candidate from B1
+[peer A2] set offerer description
+[peer A2] added peer ice candidate from B1
+[peer A2] onsignalingstatechange have-remote-offer
+[peer A2] onsignalingstatechange stable
+[peer A2] oniceconnectionstatechange checking
+[peer A2] initialized peer connection
+[peer A2] onicegatheringstatechange gathering
+[peer B1] received peer answer from A2
+[peer B1] received ice candidate from A2
+[peer B1] onsignalingstatechange stable
+[peer B1] set peer description
+[peer B1] added peer ice candidate from A2
+[peer B1] oniceconnectionstatechange checking
+[peer B1] onicegatheringstatechange complete
+[peer A2] onicegatheringstatechange complete
+[peer B1] oniceconnectionstatechange connected
+[peer B1] oniceconnectionstatechange completed
+[peer B1] onopen
+[peer A2] oniceconnectionstatechange connected
+[peer A2] ondatachannel
+[peer A2] onopen

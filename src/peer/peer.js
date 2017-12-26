@@ -44,6 +44,7 @@ async function receiveMessage(data) {
 			console.log(`[peer ${name}] index provides new peers`);
 			for (const peer of data.peers) {
 				const button = document.createElement('button');
+				button.id = `connect${peer}Button`;
 				button.textContent = `Connect to ${peer}`;
 				button.addEventListener('click', async event => {
 					await initializeAndSendOffer(peer);

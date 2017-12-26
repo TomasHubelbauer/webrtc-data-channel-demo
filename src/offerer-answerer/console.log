@@ -1,0 +1,26 @@
+[offerer] onsignalingstatechange have-local-offer
+[offerer] initialized peer connection
+[offerer] onicegatheringstatechange gathering
+[answerer] received offerer offer
+[answerer] set offerer description
+[answerer] received offerer candidate
+[answerer] onsignalingstatechange have-remote-offer
+[answerer] added offerer ice candidate
+[answerer] onsignalingstatechange stable
+[answerer] oniceconnectionstatechange checking
+[answerer] initialized peer connection
+[answerer] onicegatheringstatechange gathering
+[offerer] received answerer answer
+[offerer] onsignalingstatechange stable
+[offerer] received answerer candidate
+[offerer] oniceconnectionstatechange checking
+[offerer] set answerer description
+[offerer] added answerer ice candidate
+[answerer] onicegatheringstatechange complete
+[offerer] onicegatheringstatechange complete
+[offerer] oniceconnectionstatechange connected
+[offerer] oniceconnectionstatechange completed
+[offerer] onopen
+[answerer] oniceconnectionstatechange connected
+[answerer] ondatachannel
+[answerer] onopen

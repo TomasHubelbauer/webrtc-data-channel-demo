@@ -9,6 +9,8 @@ The code should be self-explanatory when following MDN on the side. There is onl
 
 ## Offerer-answerer mode
 
+[Demo on Bloggo](https://bloggo.herokuapp.com/webrtc-data-channel-demo/src/offerer-answerer/)
+
 - Unix: `open offerer-answerer/index.html`
 - Windows: `start offerer-answerer/index.html`
 - Chrome Test: `./cmd/chrome-screenshot/cmd.sh offerer-answerer`
@@ -21,6 +23,8 @@ In this demo, there are two separate files for offerer and answerer so that who 
 [Google Chrome Console output from this demo](/src/offerer-answerer/console.log)
 
 ## Peer mode
+
+[Demo on Bloggo](https://bloggo.herokuapp.com/webrtc-data-channel-demo/src/peer/)
 
 - Unix: `open peer/index.html`
 - Windows: `start peer/index.html`

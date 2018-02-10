@@ -22,13 +22,12 @@ In this demo, there are two separate files for offerer and answerer so that who 
 
 [Google Chrome Console output from this demo](/src/offerer-answerer/console.log)
 
-## Swift Offerer - JavaScript Answerer Mode
+## Native to Web Mode
 
-In development.
+- Native application is offerer, web application is answerer
+- Native application is answerer, web application is offerer
 
-## JavaScript Offerer - Swift Answerer Mode
-
-In development.
+[See more](src/native-to-web/README.md)
 
 ## Peer Mode
 

@@ -20,6 +20,7 @@
 		E2684597202F57C70020466A /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2684590202F57C60020466A /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E2684598202F57C70020466A /* HTTPParserC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2684591202F57C70020466A /* HTTPParserC.framework */; };
 		E2684599202F57C70020466A /* HTTPParserC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2684591202F57C70020466A /* HTTPParserC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E268459C202F597B0020466A /* www in Resources */ = {isa = PBXBuildFile; fileRef = E268459B202F597B0020466A /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		E268458F202F57C60020466A /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		E2684590202F57C60020466A /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Carthage/Build/iOS/WebRTC.framework; sourceTree = "<group>"; };
 		E2684591202F57C70020466A /* HTTPParserC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTTPParserC.framework; path = Carthage/Build/iOS/HTTPParserC.framework; sourceTree = "<group>"; };
+		E268459B202F597B0020466A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		E268457B202F54C40020466A /* Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				E268459B202F597B0020466A /* www */,
 				E268457C202F54C40020466A /* AppDelegate.swift */,
 				E268457E202F54C40020466A /* ViewController.swift */,
 				E2684580202F54C40020466A /* Main.storyboard */,
@@ -161,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E268459C202F597B0020466A /* www in Resources */,
 				E2684587202F54C40020466A /* LaunchScreen.storyboard in Resources */,
 				E2684584202F54C40020466A /* Assets.xcassets in Resources */,
 				E2684582202F54C40020466A /* Main.storyboard in Resources */,

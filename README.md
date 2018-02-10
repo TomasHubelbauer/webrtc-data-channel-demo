@@ -7,7 +7,7 @@ I've made this because I was frustrated with the lack of good WebRTC data channe
 
 The code should be self-explanatory when following MDN on the side. There is only one gotcha and it is documented/commented. Following the Console messages in Developer Tools should make it clear what happens and when.
 
-## Offerer-answerer mode
+## Offerer-answerer Mode
 
 [Demo on Bloggo](https://bloggo.herokuapp.com/webrtc-data-channel-demo/src/offerer-answerer/)
 
@@ -22,7 +22,15 @@ In this demo, there are two separate files for offerer and answerer so that who 
 
 [Google Chrome Console output from this demo](/src/offerer-answerer/console.log)
 
-## Peer mode
+## Swift Offerer - JavaScript Answerer Mode
+
+In development.
+
+## JavaScript Offerer - Swift Answerer Mode
+
+In development.
+
+## Peer Mode
 
 [Demo on Bloggo](https://bloggo.herokuapp.com/webrtc-data-channel-demo/src/peer/)
 

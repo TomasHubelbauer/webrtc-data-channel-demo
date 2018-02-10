@@ -12,7 +12,32 @@
 		E2684582202F54C40020466A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2684580202F54C40020466A /* Main.storyboard */; };
 		E2684584202F54C40020466A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2684583202F54C40020466A /* Assets.xcassets */; };
 		E2684587202F54C40020466A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2684585202F54C40020466A /* LaunchScreen.storyboard */; };
+		E2684592202F57C70020466A /* Telegraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E268458E202F57C60020466A /* Telegraph.framework */; };
+		E2684593202F57C70020466A /* Telegraph.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E268458E202F57C60020466A /* Telegraph.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E2684594202F57C70020466A /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E268458F202F57C60020466A /* CocoaAsyncSocket.framework */; };
+		E2684595202F57C70020466A /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E268458F202F57C60020466A /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E2684596202F57C70020466A /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2684590202F57C60020466A /* WebRTC.framework */; };
+		E2684597202F57C70020466A /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2684590202F57C60020466A /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E2684598202F57C70020466A /* HTTPParserC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2684591202F57C70020466A /* HTTPParserC.framework */; };
+		E2684599202F57C70020466A /* HTTPParserC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2684591202F57C70020466A /* HTTPParserC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E268459A202F57C70020466A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E2684595202F57C70020466A /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				E2684599202F57C70020466A /* HTTPParserC.framework in Embed Frameworks */,
+				E2684593202F57C70020466A /* Telegraph.framework in Embed Frameworks */,
+				E2684597202F57C70020466A /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E2684579202F54C40020466A /* Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +47,10 @@
 		E2684583202F54C40020466A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2684586202F54C40020466A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2684588202F54C50020466A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E268458E202F57C60020466A /* Telegraph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Telegraph.framework; path = Carthage/Build/iOS/Telegraph.framework; sourceTree = "<group>"; };
+		E268458F202F57C60020466A /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		E2684590202F57C60020466A /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Carthage/Build/iOS/WebRTC.framework; sourceTree = "<group>"; };
+		E2684591202F57C70020466A /* HTTPParserC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTTPParserC.framework; path = Carthage/Build/iOS/HTTPParserC.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2684594202F57C70020466A /* CocoaAsyncSocket.framework in Frameworks */,
+				E2684598202F57C70020466A /* HTTPParserC.framework in Frameworks */,
+				E2684592202F57C70020466A /* Telegraph.framework in Frameworks */,
+				E2684596202F57C70020466A /* WebRTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +71,10 @@
 		E2684570202F54C40020466A = {
 			isa = PBXGroup;
 			children = (
+				E268458F202F57C60020466A /* CocoaAsyncSocket.framework */,
+				E2684591202F57C70020466A /* HTTPParserC.framework */,
+				E268458E202F57C60020466A /* Telegraph.framework */,
+				E2684590202F57C60020466A /* WebRTC.framework */,
 				E268457B202F54C40020466A /* Mobile */,
 				E268457A202F54C40020466A /* Products */,
 			);
@@ -74,6 +111,7 @@
 				E2684575202F54C40020466A /* Sources */,
 				E2684576202F54C40020466A /* Frameworks */,
 				E2684577202F54C40020466A /* Resources */,
+				E268459A202F57C70020466A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +314,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8ATRFH5N2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Mobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TomasHubelbauer.Mobile;
@@ -291,6 +333,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8ATRFH5N2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Mobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TomasHubelbauer.Mobile;

@@ -31,7 +31,7 @@ In this demo, there are two separate files for offerer and answerer so that who 
 
 ## Peer Mode
 
-[Demo on Bloggo](https://bloggo.herokuapp.com/webrtc-data-channel-demo/src/peer/)
+[Demo](https://tomashubelbauer.github.io/webrtc-data-channel-demo/src/index.html)
 
 - Unix: `open peer/index.html`
 - Windows: `start peer/index.html`

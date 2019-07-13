@@ -65,14 +65,16 @@ Firefox screenshot capture (in development):
 - `./cmd/firefox-screenshot/cmd.sh peer`
 - `./cmd/firefox-screenshot/cmd.sh offerer-answerer`
 
-## Exploring
+## To-Do
 
-See [doc/notes.md](doc/notes.md).
+Please review the code-base and do not hesitate to open an issue or a PR with questions or
+proposed changes. PRs in the spirit of this excercise will be merged, PRs adding fluff that
+has no direct impact on understanding the data channels flow (like adding alternative
+signalling channel mechanism which work the same way the current one does, adding bundlers
+etc.) will be respectfully declined.
 
-## Contributing
-
-Please review the code-base and do not hesitate to open an issue or a PR with questions or proposed changes. PRs in the spirit of this excercise will be merged, PRs adding fluff that has no direct impact on understanding the data channels flow (like adding alternative signalling channel mechanism which work the same way the current one does, adding bundlers etc.) will be respectfully declined.
-
-Suggested contributions:
-
-See [doc/tasks.md](doc/tasks.md).
+- Fix nvm: command not found in cmd/chrome-screenshot/cmd.sh and cmd/firefox-screenshot/cmd.sh
+- Finalize Firefox headless automation for generating screenshots and console logs using Selenium WebDriver
+- Contribute a demo where peer connections are keyed by peer name and one peer can hold multiple ones or a group chat
+- Extend the/contribute a new example to cover media session establishment on top of the data one
+- Consider adding another demo where the signaling channel is a service worker connecting two tabs

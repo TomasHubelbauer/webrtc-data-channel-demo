@@ -84,3 +84,5 @@ etc.) will be respectfully declined.
 ### Extend the/contribute a new example to cover media session establishment on top of the data one
 
 ### Consider adding another demo where the signaling channel is a service worker connecting two tabs
+
+### Move `src` to the root and set up GitHub Pages again

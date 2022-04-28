@@ -1,6 +1,0 @@
-# https://stackoverflow.com/a/12021580
-
-*.xcuserstate
-xcuserdata/
-Carthage/
-.DS_Store

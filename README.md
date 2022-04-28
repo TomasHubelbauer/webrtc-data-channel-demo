@@ -1,6 +1,6 @@
 # WebRTC Data Channel Demo
 
-`postMessage`: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+[`postMessage`]: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
 
 A demo of WebRTC Data Channel using [`postMessage`] for a signalling channel.
 

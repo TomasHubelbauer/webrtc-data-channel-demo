@@ -1,4 +1,4 @@
-# WebRTC Data Channel Demo
+# WebRTC Data Channel Demo ![](https://github.com/TomasHubelbauer/webrtc-data-channel-demo/actions/workflows/pages/pages-build-deployment/badge.svg)
 
 [`postMessage`]: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
 
